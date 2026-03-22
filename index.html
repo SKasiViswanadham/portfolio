@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Kasi Viswanadham | AI & Data Science</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Caveat:wght@600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Kasi Viswanadham | AI & Data Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Caveat:wght@600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
+<input type="checkbox" id="mob-toggle"/>
 <nav id="nav">
   <div class="n-logo"><div class="n-dot"></div>Kasi Viswanadham</div>
   <ul class="n-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certs">Certifications</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#hero">Home</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certifications</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="kasi_resume.pdf" download class="n-cta">Download CV</a>
-  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  <div style="display:flex;gap:10px;align-items:center">
+    <a href="kasi_resume.pdf" download class="n-cta">Download CV</a>
+    <label for="mob-toggle" class="ham"><span></span><span></span><span></span></label>
+  </div>
 </nav>
-
-<div class="mob" id="mob">
-  <button class="mob-x" id="mob-x">✕</button>
-  <a href="#hero" class="ml">Home</a>
-  <a href="#skills" class="ml">Skills</a>
-  <a href="#projects" class="ml">Projects</a>
-  <a href="#certs" class="ml">Certifications</a>
-  <a href="#education" class="ml">Education</a>
-  <a href="#contact" class="ml">Contact</a>
-  <a href="kasi_resume.pdf" download class="ml" style="color:var(--v1)">↓ Resume</a>
+<div class="mob">
+  <label for="mob-toggle" style="position:absolute;top:18px;right:18px;width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;color:var(--mu)">✕</label>
+  <label for="mob-toggle"><a href="#hero">Home</a></label>
+  <label for="mob-toggle"><a href="#skills">Skills</a></label>
+  <label for="mob-toggle"><a href="#projects">Projects</a></label>
+  <label for="mob-toggle"><a href="#certs">Certifications</a></label>
+  <label for="mob-toggle"><a href="#education">Education</a></label>
+  <label for="mob-toggle"><a href="#contact">Contact</a></label>
+  <label for="mob-toggle" style="margin-top:12px"><a href="kasi_resume.pdf" download style="color:var(--v1)">↓ Resume</a></label>
 </div>
 
+<!-- HERO -->
 <section id="hero">
   <div class="h-mesh"></div>
   <div class="h-left">
     <div class="h-badge">Open to Internships</div>
     <h1 class="h-headline"><span class="acc1">Kasi</span><br>Viswa<span class="acc2">nadham</span></h1>
     <p class="h-role">B.Tech · AI &amp; Data Science · <a href="https://amrita.edu" target="_blank">Amrita Vishwa Vidyapeetham</a></p>
-    <p class="h-desc">B.Tech student specializing in AI &amp; Data Science. Experienced in EDA, SQL, computer vision, and real-time web applications. Seeking a Data Analyst or Data Science internship.</p>
+    <p class="h-desc">B.Tech student specializing in AI &amp; Data Science with strong foundations in data analysis, machine learning, and Python. Experienced in EDA, SQL, computer vision, and real-time web applications. Seeking a Data Analyst or Data Science internship.</p>
     <div class="h-acts">
       <a href="#projects" class="btn-p">View Projects ↓</a>
       <a href="kasi_resume.pdf" download class="btn-o">Download CV</a>
@@ -58,180 +56,226 @@
     <div class="photo-outer">
       <div class="photo-ring"></div>
       <div class="photo-frame">
-        <div class="ph-placeholder">
-          <img src="profile.jpeg" alt="Kasi Viswanadham"/> 
-        </div>
+        <img src="profile.jpeg" alt="Kasi Viswanadham"/>
+        <div class="ph-initials">KV</div>
+        <div class="ph-hint">Replace with<br>your photo</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-  <div class="wrap">
-    <div class="sh">
-      <div class="sec-ey">My toolkit</div>
-      <h2 class="sec-title">Skills &amp; <span>Technologies</span></h2>
-      <div class="sec-bar" style="background:var(--v4)"></div>
-    </div>
-    <div class="sk-section ca">
-      <span class="sk-label">Programming Languages</span>
-      <div class="sk-track">
-        <div class="pill"><span class="pdot"></span>Python</div>
-        <div class="pill"><span class="pdot"></span>Java</div>
-        <div class="pill"><span class="pdot"></span>SQL</div>
-        <div class="pill"><span class="pdot"></span>OOP Principles</div>
-        <div class="pill"><span class="pdot"></span>Data Structures</div>
-        <div class="pill"><span class="pdot"></span>Algorithms</div>
-      </div>
-    </div>
-    <div class="sk-section cb">
-      <span class="sk-label">Data Analysis &amp; Visualization</span>
-      <div class="sk-track">
-        <div class="pill"><span class="pdot"></span>Pandas</div>
-        <div class="pill"><span class="pdot"></span>NumPy</div>
-        <div class="pill"><span class="pdot"></span>Matplotlib</div>
-        <div class="pill"><span class="pdot"></span>Seaborn</div>
-        <div class="pill"><span class="pdot"></span>Excel</div>
-        <div class="pill"><span class="pdot"></span>EDA</div>
-        <div class="pill"><span class="pdot"></span>Statistical Analysis</div>
-      </div>
-    </div>
-    <div class="sk-section cc">
-      <span class="sk-label">Machine Learning &amp; AI</span>
-      <div class="sk-track">
-        <div class="pill"><span class="pdot"></span>Scikit-learn</div>
-        <div class="pill"><span class="pdot"></span>TensorFlow</div>
-        <div class="pill"><span class="pdot"></span>OpenCV</div>
-        <div class="pill"><span class="pdot"></span>MediaPipe</div>
-        <div class="pill"><span class="pdot"></span>Deep Learning</div>
-        <div class="pill"><span class="pdot"></span>Computer Vision</div>
-        <div class="pill"><span class="pdot"></span>Neural Networks</div>
-      </div>
-    </div>
-    <div class="sk-section cd">
-      <span class="sk-label">Databases &amp; Dev Tools</span>
-      <div class="sk-track">
-        <div class="pill"><span class="pdot"></span>MySQL</div>
-        <div class="pill"><span class="pdot"></span>Git</div>
-        <div class="pill"><span class="pdot"></span>GitHub</div>
-        <div class="pill"><span class="pdot"></span>Jupyter</div>
-        <div class="pill"><span class="pdot"></span>VS Code</div>
-        <div class="pill"><span class="pdot"></span>Google Colab</div>
-        <div class="pill"><span class="pdot"></span>MATLAB</div>
-        <div class="pill"><span class="pdot"></span>REST APIs</div>
-      </div>
-    </div>
+<div class="wrap">
+  <div class="sh reveal">
+    <div class="sec-ey">My toolkit</div>
+    <h2 class="sec-title">Skills &amp; <span>Technologies</span></h2>
+    <div class="sec-bar" style="background:var(--v4)"></div>
   </div>
+  <div class="sk-section ca reveal">
+    <span class="sk-label">Programming Languages</span>
+    <div class="sk-belt"><div class="sk-track">
+      <div class="pill"><span class="pdot"></span>Python</div><div class="pill"><span class="pdot"></span>Java</div><div class="pill"><span class="pdot"></span>SQL</div><div class="pill"><span class="pdot"></span>OOP Principles</div><div class="pill"><span class="pdot"></span>Data Structures</div><div class="pill"><span class="pdot"></span>Algorithms</div>
+      <div class="pill"><span class="pdot"></span>Python</div><div class="pill"><span class="pdot"></span>Java</div><div class="pill"><span class="pdot"></span>SQL</div><div class="pill"><span class="pdot"></span>OOP Principles</div><div class="pill"><span class="pdot"></span>Data Structures</div><div class="pill"><span class="pdot"></span>Algorithms</div>
+    </div></div>
+  </div>
+  <div class="sk-section cb reveal">
+    <span class="sk-label">Data Analysis &amp; Visualization</span>
+    <div class="sk-belt rev"><div class="sk-track">
+      <div class="pill"><span class="pdot"></span>Pandas</div><div class="pill"><span class="pdot"></span>NumPy</div><div class="pill"><span class="pdot"></span>Matplotlib</div><div class="pill"><span class="pdot"></span>Seaborn</div><div class="pill"><span class="pdot"></span>Excel</div><div class="pill"><span class="pdot"></span>EDA</div><div class="pill"><span class="pdot"></span>Statistical Analysis</div>
+      <div class="pill"><span class="pdot"></span>Pandas</div><div class="pill"><span class="pdot"></span>NumPy</div><div class="pill"><span class="pdot"></span>Matplotlib</div><div class="pill"><span class="pdot"></span>Seaborn</div><div class="pill"><span class="pdot"></span>Excel</div><div class="pill"><span class="pdot"></span>EDA</div><div class="pill"><span class="pdot"></span>Statistical Analysis</div>
+    </div></div>
+  </div>
+  <div class="sk-section cc reveal">
+    <span class="sk-label">Machine Learning &amp; AI</span>
+    <div class="sk-belt"><div class="sk-track">
+      <div class="pill"><span class="pdot"></span>Scikit-learn</div><div class="pill"><span class="pdot"></span>TensorFlow</div><div class="pill"><span class="pdot"></span>OpenCV</div><div class="pill"><span class="pdot"></span>MediaPipe</div><div class="pill"><span class="pdot"></span>Deep Learning</div><div class="pill"><span class="pdot"></span>Computer Vision</div><div class="pill"><span class="pdot"></span>Neural Networks</div>
+      <div class="pill"><span class="pdot"></span>Scikit-learn</div><div class="pill"><span class="pdot"></span>TensorFlow</div><div class="pill"><span class="pdot"></span>OpenCV</div><div class="pill"><span class="pdot"></span>MediaPipe</div><div class="pill"><span class="pdot"></span>Deep Learning</div><div class="pill"><span class="pdot"></span>Computer Vision</div><div class="pill"><span class="pdot"></span>Neural Networks</div>
+    </div></div>
+  </div>
+  <div class="sk-section cd reveal">
+    <span class="sk-label">Databases &amp; Dev Tools</span>
+    <div class="sk-belt rev"><div class="sk-track">
+      <div class="pill"><span class="pdot"></span>MySQL</div><div class="pill"><span class="pdot"></span>Git</div><div class="pill"><span class="pdot"></span>GitHub</div><div class="pill"><span class="pdot"></span>Jupyter</div><div class="pill"><span class="pdot"></span>VS Code</div><div class="pill"><span class="pdot"></span>Google Colab</div><div class="pill"><span class="pdot"></span>MATLAB</div><div class="pill"><span class="pdot"></span>REST APIs</div>
+      <div class="pill"><span class="pdot"></span>MySQL</div><div class="pill"><span class="pdot"></span>Git</div><div class="pill"><span class="pdot"></span>GitHub</div><div class="pill"><span class="pdot"></span>Jupyter</div><div class="pill"><span class="pdot"></span>VS Code</div><div class="pill"><span class="pdot"></span>Google Colab</div><div class="pill"><span class="pdot"></span>MATLAB</div><div class="pill"><span class="pdot"></span>REST APIs</div>
+    </div></div>
+  </div>
+</div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
-  <div class="wrap">
-    <div class="sh">
-      <div class="sec-ey">What I've built</div>
-      <h2 class="sec-title">My <span>Projects</span></h2>
-      <div class="sec-bar" style="background:var(--v6)"></div>
+<div class="wrap">
+  <div class="sh reveal">
+    <div class="sec-ey">What I've built</div>
+    <h2 class="sec-title">My <span>Projects</span></h2>
+    <div class="sec-bar" style="background:var(--v6)"></div>
+  </div>
+  <div class="pj-grid">
+    <div class="pj reveal" style="--pj-c:var(--v4)">
+      <div class="pj-n">01</div>
+      <span class="pj-type" style="background:rgba(77,150,255,.1);color:var(--v4);border:1px solid rgba(77,150,255,.2)">Web Application</span>
+      <h3 class="pj-title">Safe Route Planning App</h3>
+      <p class="pj-desc">Real-time route planning application integrating REST APIs and geolocation tracking. Dynamic path visualization using Map APIs for optimized navigation with live location processing.</p>
+      <div class="pj-tags"><span class="pj-tag">Python</span><span class="pj-tag">REST APIs</span><span class="pj-tag">Map APIs</span><span class="pj-tag">Geolocation</span></div>
+      <div class="pj-foot"><span class="pj-date">Dec 2025 – Jan 2026</span><a href="https://github.com/SKasiViswanadham/Safe-Maps" target="_blank" class="pj-lk" style="color:var(--v4)">GitHub →</a></div>
     </div>
-    <div class="pj-grid">
-      <div class="pj" style="--pj-c:var(--v4)">
-        <div class="pj-n">01</div>
-        <span class="pj-type" style="background:rgba(77,150,255,.1);color:var(--v4);border:1px solid rgba(77,150,255,.2)">Web App</span>
-        <h3 class="pj-title">Safe Route Planning App</h3>
-        <p class="pj-desc">Real-time route planning with REST APIs, geolocation tracking, and dynamic Map API visualization.</p>
-        <div class="pj-tags"><span class="pj-tag">Python</span><span class="pj-tag">REST APIs</span><span class="pj-tag">Map APIs</span><span class="pj-tag">Geolocation</span></div>
-        <div class="pj-foot"><span class="pj-date">Dec 2025 – Jan 2026</span><a href="https://github.com/SKasiViswanadham/Safe-Maps" target="_blank" class="pj-lk" style="color:var(--v4)">GitHub →</a></div>
-      </div>
-      <div class="pj" style="--pj-c:var(--v6)">
-        <div class="pj-n">02</div>
-        <span class="pj-type" style="background:rgba(255,154,60,.1);color:var(--v6);border:1px solid rgba(255,154,60,.2)">Full Stack</span>
-        <h3 class="pj-title">QR Restaurant Ordering System</h3>
-        <p class="pj-desc">QR-based digital ordering with menu browsing, order placement, and automated bill generation via MySQL.</p>
-        <div class="pj-tags"><span class="pj-tag">Java</span><span class="pj-tag">Swing</span><span class="pj-tag">MySQL</span><span class="pj-tag">OOP</span></div>
-        <div class="pj-foot"><span class="pj-date">Apr 2024 – May 2025</span><a href="https://github.com/SKasiViswanadham/QR-Based-Restaurant-Food-Ordering-System" target="_blank" class="pj-lk" style="color:var(--v6)">GitHub →</a></div>
-      </div>
-      <div class="pj" style="--pj-c:var(--v3)">
-        <div class="pj-n">03</div>
-        <span class="pj-type" style="background:rgba(107,203,119,.1);color:var(--v3);border:1px solid rgba(107,203,119,.2)">Computer Vision</span>
-        <h3 class="pj-title">Gesture Keyboard Search</h3>
-        <p class="pj-desc">Gesture-controlled virtual keyboard using MediaPipe and OpenCV for real-time hands-free interaction.</p>
-        <div class="pj-tags"><span class="pj-tag">Python</span><span class="pj-tag">MediaPipe</span><span class="pj-tag">OpenCV</span></div>
-        <div class="pj-foot"><span class="pj-date">Feb – Mar 2025</span><a href="https://github.com/SKasiViswanadham/Virtual-Keyboard" target="_blank" class="pj-lk" style="color:var(--v3)">GitHub →</a></div>
-      </div>
+    <div class="pj reveal" style="--pj-c:var(--v6)">
+      <div class="pj-n">02</div>
+      <span class="pj-type" style="background:rgba(255,154,60,.1);color:var(--v6);border:1px solid rgba(255,154,60,.2)">Full Stack</span>
+      <h3 class="pj-title">QR Restaurant Ordering System</h3>
+      <p class="pj-desc">QR-based digital ordering system enabling menu browsing, order placement, and automated bill generation. MySQL backend with modular OOP architecture for scalability.</p>
+      <div class="pj-tags"><span class="pj-tag">Java</span><span class="pj-tag">Swing</span><span class="pj-tag">MySQL</span><span class="pj-tag">OOP</span></div>
+      <div class="pj-foot"><span class="pj-date">Apr 2024 – May 2025</span><a href="https://github.com/SKasiViswanadham/QR-Based-Restaurant-Food-Ordering-System" target="_blank" class="pj-lk" style="color:var(--v6)">GitHub →</a></div>
+    </div>
+    <div class="pj reveal" style="--pj-c:var(--v3)">
+      <div class="pj-n">03</div>
+      <span class="pj-type" style="background:rgba(107,203,119,.1);color:var(--v3);border:1px solid rgba(107,203,119,.2)">Computer Vision</span>
+      <h3 class="pj-title">Gesture Keyboard Search</h3>
+      <p class="pj-desc">Gesture-controlled virtual keyboard using computer vision for hands-free interaction. Real-time hand landmark detection with MediaPipe and OpenCV, optimized via threshold tuning.</p>
+      <div class="pj-tags"><span class="pj-tag">Python</span><span class="pj-tag">MediaPipe</span><span class="pj-tag">OpenCV</span></div>
+      <div class="pj-foot"><span class="pj-date">Feb 2025 – Mar 2025</span><a href="https://github.com/SKasiViswanadham/Virtual-Keyboard" target="_blank" class="pj-lk" style="color:var(--v3)">GitHub →</a></div>
     </div>
   </div>
+</div>
 </section>
 
+<!-- CERTIFICATIONS -->
 <section id="certs">
-  <div class="wrap">
-    <div class="sh">
-      <h2 class="sec-title">Certifications &amp; <span>Training</span></h2>
-      <div class="sec-bar" style="background:var(--v5)"></div>
+<div class="wrap">
+  <div class="sh reveal">
+    <div class="sec-ey">Credentials</div>
+    <h2 class="sec-title">Certifications &amp; <span>Training</span></h2>
+    <div class="sec-bar" style="background:var(--v5)"></div>
+  </div>
+  <div class="cert-grid">
+    <div class="cert reveal" style="--cc:var(--v1)">
+      <span class="cert-yr" style="background:rgba(255,107,107,.1);color:var(--v1);border:1px solid rgba(255,107,107,.2)">2026</span>
+      <div class="cert-org">IBM SkillsBuild</div>
+      <div class="cert-title">Machine Learning for Data Science Projects</div>
+      <div class="cert-desc">Hands-on training in ML algorithms, model evaluation, and data science workflows applied to real-world problems.</div>
     </div>
-    <div class="cert-grid">
-      <div class="cert" style="--cc:var(--v1)"><span class="cert-yr" style="background:rgba(255,107,107,.1);color:var(--v1);border:1px solid rgba(255,107,107,.2)">2026</span><div class="cert-org">IBM SkillsBuild</div><div class="cert-title">Machine Learning for Data Science Projects</div><div class="cert-desc">ML algorithms, model evaluation, and data science workflows on real-world problems.</div></div>
-      <div class="cert" style="--cc:var(--v4)"><span class="cert-yr" style="background:rgba(77,150,255,.1);color:var(--v4);border:1px solid rgba(77,150,255,.2)">2026</span><div class="cert-org">DataCamp</div><div class="cert-title">Deep Learning in Python</div><div class="cert-desc">Neural networks, backpropagation, and deep learning model implementation in Python.</div></div>
-      <div class="cert" style="--cc:var(--v2)"><span class="cert-yr" style="background:rgba(255,217,61,.1);color:var(--v2);border:1px solid rgba(255,217,61,.2)">2025</span><div class="cert-org">Deloitte (Forage)</div><div class="cert-title">Technology Job Simulation</div><div class="cert-desc">Simulated coding and consulting tasks in a Big Four technology environment.</div></div>
-      <div class="cert" style="--cc:var(--v3)"><span class="cert-yr" style="background:rgba(107,203,119,.1);color:var(--v3);border:1px solid rgba(107,203,119,.2)">2025</span><div class="cert-org">MathWorks</div><div class="cert-title">Introduction to Linear Algebra with MATLAB</div><div class="cert-desc">Vectors, matrices, and linear transformations — foundations for machine learning.</div></div>
+    <div class="cert reveal" style="--cc:var(--v4)">
+      <span class="cert-yr" style="background:rgba(77,150,255,.1);color:var(--v4);border:1px solid rgba(77,150,255,.2)">2026</span>
+      <div class="cert-org">DataCamp</div>
+      <div class="cert-title">Deep Learning in Python</div>
+      <div class="cert-desc">Practical experience in neural networks, backpropagation, and deep learning model implementation using Python frameworks.</div>
+    </div>
+    <div class="cert reveal" style="--cc:var(--v2)">
+      <span class="cert-yr" style="background:rgba(255,217,61,.1);color:var(--v2);border:1px solid rgba(255,217,61,.2)">2025</span>
+      <div class="cert-org">Deloitte (Forage)</div>
+      <div class="cert-title">Technology Job Simulation</div>
+      <div class="cert-desc">Simulated industry tasks involving coding, development, and technology consulting at a Big Four firm.</div>
+    </div>
+    <div class="cert reveal" style="--cc:var(--v3)">
+      <span class="cert-yr" style="background:rgba(107,203,119,.1);color:var(--v3);border:1px solid rgba(107,203,119,.2)">2025</span>
+      <div class="cert-org">MathWorks</div>
+      <div class="cert-title">Introduction to Linear Algebra with MATLAB</div>
+      <div class="cert-desc">Mathematical foundations in vectors, matrices, and linear transformations — core skills for machine learning.</div>
     </div>
   </div>
+</div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
-  <div class="wrap">
-    <div class="sh">
-      <div class="sec-ey">Academic background</div>
-      <h2 class="sec-title">My <span>Education</span></h2>
-      <div class="sec-bar" style="background:var(--v2)"></div>
+<div class="wrap">
+  <div class="sh reveal">
+    <div class="sec-ey">Academic background</div>
+    <h2 class="sec-title">My <span>Education</span></h2>
+    <div class="sec-bar" style="background:var(--v2)"></div>
+  </div>
+  <div class="ed-grid">
+    <div class="ed reveal">
+      <div class="ed-ico" style="background:rgba(255,217,61,.1)">🎓</div>
+      <div class="ed-deg">B.Tech in Artificial Intelligence &amp; Data Science</div>
+      <div class="ed-inst">Amrita Vishwa Vidyapeetham, Amritapuri, Kerala</div>
+      <div class="ed-yr" style="color:var(--v2)">2024 – 2028</div>
+      <div class="ed-badge" style="background:rgba(255,217,61,.1);border:1px solid rgba(255,217,61,.22);color:var(--v2)">★ CGPA 9.06 / 10</div>
     </div>
-    <div class="ed-grid">
-      <div class="ed"><div class="ed-ico" style="background:rgba(255,217,61,.1)">🎓</div><div class="ed-deg">B.Tech in Artificial Intelligence &amp; Data Science</div><div class="ed-inst">Amrita Vishwa Vidyapeetham, Amritapuri, Kerala</div><div class="ed-yr" style="color:var(--v2)">2024 – 2028</div><div class="ed-badge" style="background:rgba(255,217,61,.1);border:1px solid rgba(255,217,61,.22);color:var(--v2)">★ CGPA 9.06 / 10</div></div>
-      <div class="ed"><div class="ed-ico" style="background:rgba(107,203,119,.1)">📗</div><div class="ed-deg">Intermediate (Class XII)</div><div class="ed-inst">Resonance Junior College, Vijayawada</div><div class="ed-yr" style="color:var(--v3)">Passed 2024</div><div class="ed-badge" style="background:rgba(107,203,119,.08);border:1px solid rgba(107,203,119,.22);color:var(--v3)">✓ 95.2%</div></div>
-      <div class="ed"><div class="ed-ico" style="background:rgba(199,125,255,.1)">📘</div><div class="ed-deg">Secondary Education (Class X)</div><div class="ed-inst">SVV EM High School, Vijayawada</div><div class="ed-yr" style="color:var(--v5)">Passed 2022</div><div class="ed-badge" style="background:rgba(199,125,255,.08);border:1px solid rgba(199,125,255,.22);color:var(--v5)">✓ 94.6%</div></div>
+    <div class="ed reveal">
+      <div class="ed-ico" style="background:rgba(107,203,119,.1)">📗</div>
+      <div class="ed-deg">Intermediate (Class XII)</div>
+      <div class="ed-inst">Resonance Junior College, Vijayawada</div>
+      <div class="ed-yr" style="color:var(--v3)">Passed 2024</div>
+      <div class="ed-badge" style="background:rgba(107,203,119,.08);border:1px solid rgba(107,203,119,.22);color:var(--v3)">✓ 95.2%</div>
+    </div>
+    <div class="ed reveal">
+      <div class="ed-ico" style="background:rgba(199,125,255,.1)">📘</div>
+      <div class="ed-deg">Secondary Education (Class X)</div>
+      <div class="ed-inst">SVV EM High School, Vijayawada</div>
+      <div class="ed-yr" style="color:var(--v5)">Passed 2022</div>
+      <div class="ed-badge" style="background:rgba(199,125,255,.08);border:1px solid rgba(199,125,255,.22);color:var(--v5)">✓ 94.6%</div>
     </div>
   </div>
+</div>
 </section>
 
+<!-- HACKATHONS -->
 <section id="activities">
-  <div class="wrap">
-    <div class="sh">
-      <div class="sec-ey">Events</div>
-      <h2 class="sec-title">Hackathons &amp; <span>Activities</span></h2>
-      <div class="sec-bar" style="background:var(--v1)"></div>
+<div class="wrap">
+  <div class="sh reveal">
+    <div class="sec-ey">Events</div>
+    <h2 class="sec-title">Hackathons &amp; <span>Activities</span></h2>
+    <div class="sec-bar" style="background:var(--v1)"></div>
+  </div>
+  <div class="ac-grid">
+    <div class="ac reveal">
+      <div class="ac-ico" style="background:rgba(255,217,61,.1)">🏆</div>
+      <div>
+        <div class="ac-title">UIDAI Hackathon 2026</div>
+        <div class="ac-txt">National-level technology hackathon focused on digital identity solutions. Collaborated in a team to prototype a functional solution. Results awaited.</div>
+        <span class="ac-badge" style="background:rgba(255,107,107,.08);color:var(--v1);border:1px solid rgba(255,107,107,.18)">National Level</span>
+      </div>
     </div>
-    <div class="ac-grid">
-      <div class="ac"><div class="ac-ico" style="background:rgba(255,217,61,.1)">🏆</div><div><div class="ac-title">UIDAI Hackathon 2026</div><div class="ac-txt">National-level hackathon on digital identity solutions. Prototyped a functional solution in a team. Results awaited.</div><span class="ac-badge" style="background:rgba(255,107,107,.08);color:var(--v1);border:1px solid rgba(255,107,107,.18)">National Level</span></div></div>
-      <div class="ac"><div class="ac-ico" style="background:rgba(107,203,119,.1)">⚡</div><div><div class="ac-title">CMR HackFest 3.0</div><div class="ac-txt">Competitive hackathon focused on rapid prototyping and application development under time constraints.</div><span class="ac-badge" style="background:rgba(107,203,119,.08);color:var(--v3);border:1px solid rgba(107,203,119,.18)">Participant</span></div></div>
+    <div class="ac reveal">
+      <div class="ac-ico" style="background:rgba(107,203,119,.1)">⚡</div>
+      <div>
+        <div class="ac-title">CMR HackFest 3.0</div>
+        <div class="ac-txt">Competitive hackathon emphasizing rapid problem-solving, prototyping, and application development under time constraints.</div>
+        <span class="ac-badge" style="background:rgba(107,203,119,.08);color:var(--v3);border:1px solid rgba(107,203,119,.18)">Participant</span>
+      </div>
     </div>
   </div>
+</div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
+<div class="wrap">
+  <div class="sh rev-l">
+    <div class="sec-ey">Let's connect</div>
+    <h2 class="sec-title">Get In <span>Touch</span></h2>
+    <div class="sec-bar" style="background:var(--v1)"></div>
+  </div>
+  <p class="ct-desc rev-l">I'm actively seeking Data Analyst or Data Science internship opportunities. Whether you have a project, collaboration, or just want to talk machine learning — reach out!</p>
   <div class="ct-in">
-    <div>
-      <div class="sh">
-        <div class="sec-ey">Let's connect</div>
-        <h2 class="sec-title">Get In <span>Touch</span></h2>
-        <div class="sec-bar" style="background:var(--v1)"></div>
-      </div>
-      <p class="ct-desc">Actively seeking Data Analyst or Data Science internship opportunities. Have a project or collaboration in mind? Reach out!</p>
-      <div class="ct-lks">
-        <a href="mailto:kasiviswanadhamsns@gmail.com" class="ck"><div class="ck-ic">✉️</div><div><div class="ck-lb">Email</div><div class="ck-vl">kasiviswanadhamsns@gmail.com</div></div></a>
-        <a href="tel:+919989739628" class="ck"><div class="ck-ic">📞</div><div><div class="ck-lb">Phone</div><div class="ck-vl">+91 9989739628</div></div></a>
-        <a href="https://linkedin.com/in/seemakurthi-naga-surya-kasi-viswanadham-14473b334" target="_blank" class="ck"><div class="ck-ic">💼</div><div><div class="ck-lb">LinkedIn</div><div class="ck-vl">seemakurthi-naga-surya-kasi-viswanadham</div></div></a>
-        <a href="https://github.com/SKasiViswanadham" target="_blank" class="ck"><div class="ck-ic">🐙</div><div><div class="ck-lb">GitHub</div><div class="ck-vl">github.com/SKasiViswanadham</div></div></a>
-        <a href="kasi_resume.pdf" download class="ck"><div class="ck-ic">📄</div><div><div class="ck-lb">Resume</div><div class="ck-vl">Download PDF ↓</div></div></a>
-      </div>
+    <div class="ct-lks rev-l">
+      <a href="mailto:kasiviswanadhamsns@gmail.com" class="ck"><div class="ck-ic">✉️</div><div><div class="ck-lb">Email</div><div class="ck-vl">kasiviswanadhamsns@gmail.com</div></div></a>
+      <a href="tel:+919989739628" class="ck"><div class="ck-ic">📞</div><div><div class="ck-lb">Phone</div><div class="ck-vl">+91 9989739628</div></div></a>
+      <a href="https://linkedin.com/in/seemakurthi-naga-surya-kasi-viswanadham-14473b334" target="_blank" class="ck"><div class="ck-ic">💼</div><div><div class="ck-lb">LinkedIn</div><div class="ck-vl">seemakurthi-naga-surya-kasi-viswanadham</div></div></a>
+      <a href="https://github.com/SKasiViswanadham" target="_blank" class="ck"><div class="ck-ic">🐙</div><div><div class="ck-lb">GitHub</div><div class="ck-vl">github.com/SKasiViswanadham</div></div></a>
+      <a href="kasi_resume.pdf" download class="ck"><div class="ck-ic">📄</div><div><div class="ck-lb">Resume</div><div class="ck-vl">Download PDF ↓</div></div></a>
+    </div>
+    <div class="reveal">
+      <form class="c-form" action="mailto:kasiviswanadhamsns@gmail.com" method="GET">
+        <div class="fg"><label>Name</label><input type="text" placeholder="Your name" required/></div>
+        <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required/></div>
+        <div class="fg"><label>Message</label><textarea placeholder="What's on your mind?" required></textarea></div>
+        <button type="submit" class="s-btn" id="sBtn"><span id="sTxt">Send Message</span>→</button>
+      </form>
+    </div>
+  </div>
+</div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="f-logo">Kasi Viswanadham</div>
   <div class="f-lks">
-    <a href="#hero">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certs">Certifications</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-    <a href="kasi_resume.pdf" download style="color:rgba(255,107,107,.6)">Resume</a>
+    <a href="#hero">Home</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#certs">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <a href="kasi_resume.pdf" download style="color:rgba(255,107,107,.6)">↓ Resume</a>
   </div>
   <div class="f-copy">© 2026 Seemakurthi Naga Surya Kasi Viswanadham</div>
 </footer>
