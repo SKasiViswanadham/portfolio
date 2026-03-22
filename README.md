@@ -106,8 +106,3 @@ This provides:
 * GitHub: https://github.com/SKasiViswanadham
 * LinkedIn: Provided in portfolio
 
----
-
-## 📄 License
-
-This project is open-source and free to use for personal and educational purposes.
